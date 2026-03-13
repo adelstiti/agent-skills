@@ -1,0 +1,64 @@
+{
+  "version": "1.0.0",
+  "organization": "Lucid Community",
+  "date": "March 2026",
+  "laravelVersion": "12.x",
+  "phpVersion": "8.3+",
+  "rulesTotal": 30,
+  "abstract": "Comprehensive Laravel 12 Lucid Architecture guide designed for AI agents and LLMs. Contains 30+ rules across 7 categories, prioritized by impact from critical (foundation and feature patterns) to incremental (advanced patterns). Each rule includes detailed explanations, real-world examples with bad and good implementations using PHP 8.3 and Laravel 12 features, and specific impact metrics to guide automated refactoring and code generation. Focuses on Lucid Architecture patterns: domains as business logic boundaries, features as user-facing entry points, operations as orchestrators, and jobs as atomic units of work.",
+  "references": [
+    "https://lucidarch.dev",
+    "https://github.com/lucidarch/lucid",
+    "https://laravel.com/docs/12.x",
+    "https://docs.lucidarch.dev/getting-started",
+    "https://docs.lucidarch.dev/domains",
+    "https://docs.lucidarch.dev/features",
+    "https://docs.lucidarch.dev/operations",
+    "https://docs.lucidarch.dev/jobs",
+    "https://php.net/manual/en/language.types.declarations.php"
+  ],
+  "categories": [
+    {
+      "name": "Foundation & Structure",
+      "prefix": "foundation",
+      "impact": "CRITICAL",
+      "description": "Core Lucid concepts: directory layout, services, domains, features, operations, and jobs"
+    },
+    {
+      "name": "Features & Operations",
+      "prefix": "feature",
+      "impact": "CRITICAL",
+      "description": "Feature classes as entry points and operations as orchestrators of jobs"
+    },
+    {
+      "name": "Domains & Services",
+      "prefix": "domain",
+      "impact": "HIGH",
+      "description": "Domain boundaries, models, cross-domain communication, and service isolation"
+    },
+    {
+      "name": "Jobs & Units",
+      "prefix": "job",
+      "impact": "HIGH",
+      "description": "Atomic job design, dependency injection, reusability, and queue integration"
+    },
+    {
+      "name": "Data & Validation",
+      "prefix": "data",
+      "impact": "MEDIUM",
+      "description": "Data objects, transformers, validation rules, and attribute casting"
+    },
+    {
+      "name": "Testing",
+      "prefix": "test",
+      "impact": "MEDIUM",
+      "description": "Testing features, operations, and jobs at appropriate levels of isolation"
+    },
+    {
+      "name": "Advanced Patterns",
+      "prefix": "advanced",
+      "impact": "LOW-MEDIUM",
+      "description": "Multi-service monolith, event-driven architecture, and API versioning"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "version": "1.0.0",
+  "organization": "Next.js Community",
+  "date": "March 2026",
+  "nextjsVersion": "15.x",
+  "reactVersion": "19.x",
+  "rulesTotal": 35,
+  "abstract": "Comprehensive Next.js 15 App Router best practices guide designed for AI agents and LLMs. Contains 35+ rules across 8 categories, prioritized by impact from critical (routing, data fetching, component model) to incremental (security and middleware). Each rule includes detailed explanations, real-world examples with bad and good implementations using React 19 and Next.js 15 features, and specific impact metrics to guide automated refactoring and code generation. Focuses on modern patterns: React Server Components, Server Actions, streaming, Partial Prerendering, and the App Router mental model.",
+  "references": [
+    "https://nextjs.org/docs",
+    "https://nextjs.org/docs/app",
+    "https://nextjs.org/docs/app/building-your-application/routing",
+    "https://nextjs.org/docs/app/building-your-application/data-fetching",
+    "https://nextjs.org/docs/app/building-your-application/rendering",
+    "https://nextjs.org/docs/app/building-your-application/caching",
+    "https://react.dev/reference/rsc/server-components",
+    "https://react.dev/reference/rsc/server-actions"
+  ],
+  "categories": [
+    {
+      "name": "Routing & Layout",
+      "prefix": "route",
+      "impact": "CRITICAL",
+      "description": "App Router directory conventions, layouts, loading states, and route organization"
+    },
+    {
+      "name": "Data Fetching & Caching",
+      "prefix": "data",
+      "impact": "CRITICAL",
+      "description": "Server-side data fetching, caching strategies, revalidation, and streaming"
+    },
+    {
+      "name": "Server & Client Components",
+      "prefix": "comp",
+      "impact": "CRITICAL",
+      "description": "React Server Components, Client Components, composition patterns, and serialization"
+    },
+    {
+      "name": "Server Actions",
+      "prefix": "action",
+      "impact": "HIGH",
+      "description": "Data mutations, form integration, validation, and error handling with Server Actions"
+    },
+    {
+      "name": "Performance & Optimization",
+      "prefix": "perf",
+      "impact": "HIGH",
+      "description": "Image optimization, font loading, prefetching, dynamic imports, and bundle analysis"
+    },
+    {
+      "name": "Metadata & SEO",
+      "prefix": "meta",
+      "impact": "MEDIUM",
+      "description": "Static and dynamic metadata, Open Graph, sitemap, and robots configuration"
+    },
+    {
+      "name": "Error Handling & Loading",
+      "prefix": "error",
+      "impact": "MEDIUM",
+      "description": "Error boundaries, not-found pages, Suspense boundaries, and loading states"
+    },
+    {
+      "name": "Security & Middleware",
+      "prefix": "sec",
+      "impact": "MEDIUM",
+      "description": "Middleware for auth, server-only code protection, environment variables, and security headers"
+    }
+  ]
+}
