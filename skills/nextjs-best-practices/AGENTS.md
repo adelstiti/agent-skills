@@ -8,7 +8,7 @@
 
 ## Overview
 
-Comprehensive guide for building Next.js 15 applications with the App Router, designed for AI agents and LLMs. Contains 35+ rules across 8 categories, prioritized by impact from critical (routing, data fetching, component model) to incremental (security and middleware). Each rule includes detailed explanations, real-world examples comparing incorrect vs. correct implementations, and specific impact metrics.
+Comprehensive guide for building Next.js 15 applications with the App Router, designed for AI agents and LLMs. Contains 11 rules across 8 categories, prioritized by impact from critical (routing, data fetching, component model) to incremental (security and middleware). Each rule includes detailed explanations, real-world examples comparing incorrect vs. correct implementations, and specific impact metrics.
 
 ### Key Features
 
@@ -49,7 +49,7 @@ This guide is organized into 8 categories, prioritized by their impact on applic
 **Impact:** CRITICAL
 **Description:** The App Router uses file-system based routing with special files (page.tsx, layout.tsx, loading.tsx, error.tsx). Proper route organization with groups, dynamic segments, and layouts creates a maintainable, performant application structure.
 
-**Rules in this category:** 7
+**Rules in this category:** 2
 
 ---
 
@@ -58,7 +58,7 @@ This guide is organized into 8 categories, prioritized by their impact on applic
 **Impact:** CRITICAL
 **Description:** Data fetching in the App Router happens in Server Components using async/await. The caching layer (fetch cache, Data Cache, Full Route Cache) must be understood and configured correctly. Parallel fetching, streaming, and revalidation are essential for performance.
 
-**Rules in this category:** 6
+**Rules in this category:** 2
 
 ---
 
@@ -67,7 +67,7 @@ This guide is organized into 8 categories, prioritized by their impact on applic
 **Impact:** CRITICAL
 **Description:** The mental model of Server Components (default, no JS shipped) vs Client Components ('use client', interactive) is the foundation of App Router. Pushing the client boundary to leaves, composing server/client correctly, and understanding serialization rules are critical.
 
-**Rules in this category:** 5
+**Rules in this category:** 2
 
 ---
 
@@ -76,7 +76,7 @@ This guide is organized into 8 categories, prioritized by their impact on applic
 **Impact:** HIGH
 **Description:** Server Actions replace API routes for mutations. They integrate with forms, useActionState, and the revalidation system. Proper validation, error handling, and revalidation after mutations are essential for data integrity.
 
-**Rules in this category:** 5
+**Rules in this category:** 1
 
 ---
 
@@ -85,7 +85,7 @@ This guide is organized into 8 categories, prioritized by their impact on applic
 **Impact:** HIGH
 **Description:** Next.js provides built-in optimizations for images (next/image), fonts (next/font), and navigation (next/link). Dynamic imports, bundle analysis, and Partial Prerendering further improve performance and Core Web Vitals.
 
-**Rules in this category:** 6
+**Rules in this category:** 1
 
 ---
 
@@ -94,7 +94,7 @@ This guide is organized into 8 categories, prioritized by their impact on applic
 **Impact:** MEDIUM
 **Description:** The Metadata API provides a type-safe way to define page metadata. Static metadata uses exported objects, dynamic metadata uses generateMetadata. Open Graph, Twitter cards, sitemaps, and robots.txt complete the SEO picture.
 
-**Rules in this category:** 5
+**Rules in this category:** 1
 
 ---
 
@@ -103,7 +103,7 @@ This guide is organized into 8 categories, prioritized by their impact on applic
 **Impact:** MEDIUM
 **Description:** Special files (error.tsx, not-found.tsx, loading.tsx) create automatic error boundaries and loading states. Suspense boundaries enable streaming for granular loading UIs.
 
-**Rules in this category:** 5
+**Rules in this category:** 1
 
 ---
 
@@ -112,4 +112,4 @@ This guide is organized into 8 categories, prioritized by their impact on applic
 **Impact:** MEDIUM
 **Description:** Middleware runs before every request for auth checks, redirects, and header manipulation. The server-only package prevents accidental client-side imports of server code. Security headers and CSRF protection complete the security picture.
 
-**Rules in this category:** 5
+**Rules in this category:** 1

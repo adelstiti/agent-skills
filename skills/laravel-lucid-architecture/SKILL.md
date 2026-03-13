@@ -11,7 +11,7 @@ metadata:
 
 # Laravel 12 Lucid Architecture
 
-Comprehensive guide for building Laravel 12 applications with Lucid Architecture. Contains 30+ rules across 7 categories for building scalable, domain-driven Laravel applications.
+Comprehensive guide for building Laravel 12 applications with Lucid Architecture. Contains 14 rules across 7 categories for building scalable, domain-driven Laravel applications.
 
 ## When to Apply
 
@@ -42,9 +42,6 @@ Reference these guidelines when:
 - `foundation-directory-structure` - Lucid's directory layout and conventions
 - `foundation-service-concept` - Service as a high-level boundary
 - `foundation-domain-concept` - Domains encapsulate business logic
-- `foundation-feature-concept` - Features as entry points for operations
-- `foundation-operation-concept` - Operations orchestrate jobs
-- `foundation-job-concept` - Jobs as atomic units of work
 
 ### 2. Features & Operations (CRITICAL)
 
@@ -52,44 +49,28 @@ Reference these guidelines when:
 - `feature-controller-dispatch` - Dispatch features from controllers
 - `feature-request-validation` - Validate input in features
 - `feature-operation-orchestration` - Operations coordinate jobs
-- `feature-response-format` - Return consistent responses
 
 ### 3. Domains & Services (HIGH)
 
 - `domain-boundaries` - Clear domain boundaries
-- `domain-models-in-domain` - Models belong to domains
-- `domain-jobs-encapsulation` - Jobs encapsulate domain logic
 - `domain-cross-domain` - Cross-domain communication patterns
-- `service-isolation` - Services as isolated units
 
 ### 4. Jobs & Units (HIGH)
 
 - `job-single-responsibility` - One task per job
 - `job-constructor-injection` - Inject dependencies via constructor
-- `job-return-values` - Jobs return meaningful values
-- `job-reusability` - Design jobs for reuse across features
-- `job-queue-integration` - Queue-aware job design
 
 ### 5. Data & Validation (MEDIUM)
 
 - `data-objects` - Use data objects for structured data
-- `data-transformers` - Transform data between layers
-- `data-validation-rules` - Centralized validation rules
-- `data-casts` - Attribute casting in models
 
 ### 6. Testing (MEDIUM)
 
 - `test-feature-tests` - Test features end-to-end
-- `test-operation-tests` - Test operations in isolation
-- `test-job-unit-tests` - Unit test individual jobs
-- `test-domain-tests` - Test domain logic independently
 
 ### 7. Advanced Patterns (LOW-MEDIUM)
 
 - `advanced-multi-service` - Multi-service monolith patterns
-- `advanced-event-driven` - Event-driven communication
-- `advanced-policy-integration` - Authorization with policies
-- `advanced-api-versioning` - API versioning in Lucid
 
 ## Lucid Architecture Overview
 

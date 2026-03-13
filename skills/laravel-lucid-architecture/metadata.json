@@ -4,8 +4,8 @@
   "date": "March 2026",
   "laravelVersion": "12.x",
   "phpVersion": "8.3+",
-  "rulesTotal": 30,
-  "abstract": "Comprehensive Laravel 12 Lucid Architecture guide designed for AI agents and LLMs. Contains 30+ rules across 7 categories, prioritized by impact from critical (foundation and feature patterns) to incremental (advanced patterns). Each rule includes detailed explanations, real-world examples with bad and good implementations using PHP 8.3 and Laravel 12 features, and specific impact metrics to guide automated refactoring and code generation. Focuses on Lucid Architecture patterns: domains as business logic boundaries, features as user-facing entry points, operations as orchestrators, and jobs as atomic units of work.",
+  "rulesTotal": 14,
+  "abstract": "Comprehensive Laravel 12 Lucid Architecture guide designed for AI agents and LLMs. Contains 14 rules across 7 categories, prioritized by impact from critical (foundation and feature patterns) to incremental (advanced patterns). Each rule includes detailed explanations, real-world examples with bad and good implementations using PHP 8.3 and Laravel 12 features, and specific impact metrics to guide automated refactoring and code generation. Focuses on Lucid Architecture patterns: domains as business logic boundaries, features as user-facing entry points, operations as orchestrators, and jobs as atomic units of work.",
   "references": [
     "https://lucidarch.dev",
     "https://github.com/lucidarch/lucid",

@@ -4,8 +4,8 @@
   "date": "March 2026",
   "nextjsVersion": "15.x",
   "reactVersion": "19.x",
-  "rulesTotal": 35,
-  "abstract": "Comprehensive Next.js 15 App Router best practices guide designed for AI agents and LLMs. Contains 35+ rules across 8 categories, prioritized by impact from critical (routing, data fetching, component model) to incremental (security and middleware). Each rule includes detailed explanations, real-world examples with bad and good implementations using React 19 and Next.js 15 features, and specific impact metrics to guide automated refactoring and code generation. Focuses on modern patterns: React Server Components, Server Actions, streaming, Partial Prerendering, and the App Router mental model.",
+  "rulesTotal": 11,
+  "abstract": "Comprehensive Next.js 15 App Router best practices guide designed for AI agents and LLMs. Contains 11 rules across 8 categories, prioritized by impact from critical (routing, data fetching, component model) to incremental (security and middleware). Each rule includes detailed explanations, real-world examples with bad and good implementations using React 19 and Next.js 15 features, and specific impact metrics to guide automated refactoring and code generation. Focuses on modern patterns: React Server Components, Server Actions, streaming, Partial Prerendering, and the App Router mental model.",
   "references": [
     "https://nextjs.org/docs",
     "https://nextjs.org/docs/app",

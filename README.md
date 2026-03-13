@@ -2,14 +2,13 @@
 
 Curated skills for AI coding agents (Claude Code, Cursor, Windsurf, etc.) that teach your agent **battle-tested patterns** instead of letting it guess.
 
-Built on the open [Agent Skills](https://agentskills.io/) format.
 
 ## What's Inside
 
 | Skill | Rules | Covers |
 |-------|------:|--------|
-| **[laravel-lucid-architecture](skills/laravel-lucid-architecture)** | 30+ | Domains, Features, Operations, Jobs, Data Objects, Testing |
-| **[nextjs-best-practices](skills/nextjs-best-practices)** | 35+ | App Router, RSC, Server Actions, Caching, Streaming, Middleware |
+| **[laravel-lucid-architecture](skills/laravel-lucid-architecture)** | 14 | Domains, Features, Operations, Jobs, Data Objects, Testing |
+| **[nextjs-best-practices](skills/nextjs-best-practices)** | 11 | App Router, RSC, Server Actions, Caching, Streaming, Middleware |
 
 Every rule includes:
 - **Why** it matters (not just the what)
@@ -18,17 +17,16 @@ Every rule includes:
 
 ## Quick Start
 
-Install everything:
+### Next.js (via [skills.sh](https://skills.sh/))
 
 ```bash
-npx skills add agent-skills
+npx skills add adelstiti/agent-skills --skill nextjs-best-practices
 ```
 
-Or pick what you need:
+### Laravel (via [Laravel Boost](https://laravelboost.com/))
 
 ```bash
-npx skills add agent-skills --skill laravel-lucid-architecture
-npx skills add agent-skills --skill nextjs-best-practices
+php artisan boost:add-skill adelstiti/agent-skills --skill laravel-lucid-architecture
 ```
 
 ## Skills Breakdown

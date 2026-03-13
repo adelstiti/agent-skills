@@ -11,8 +11,8 @@ This repository contains comprehensive skills for AI coding agents, optimized fo
 
 | Skill | Rules | Priority Focus |
 |-------|-------|----------------|
-| laravel-lucid-architecture | 30+ | Lucid domains, features, operations, jobs |
-| nextjs-best-practices | 35+ | App Router, RSC, caching, performance |
+| laravel-lucid-architecture | 14 | Lucid domains, features, operations, jobs |
+| nextjs-best-practices | 11 | App Router, RSC, caching, performance |
 
 ## Usage
 

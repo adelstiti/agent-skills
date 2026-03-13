@@ -11,7 +11,7 @@ metadata:
 
 # Next.js 15 Best Practices
 
-Comprehensive guide for building Next.js 15 applications with App Router. Contains 35+ rules across 8 categories for building fast, scalable, production-ready Next.js applications.
+Comprehensive guide for building Next.js 15 applications with App Router. Contains 11 rules across 8 categories for building fast, scalable, production-ready Next.js applications.
 
 ## When to Apply
 
@@ -43,69 +43,36 @@ Reference these guidelines when:
 
 - `route-app-directory` - Use App Router directory conventions
 - `route-layouts` - Shared layouts for nested routes
-- `route-loading-ui` - Use loading.tsx for instant loading states
-- `route-parallel-routes` - Parallel routes for complex UIs
-- `route-intercepting-routes` - Route interception for modals
-- `route-route-groups` - Organize routes with (groups)
-- `route-dynamic-segments` - Dynamic route segments [slug]
 
 ### 2. Data Fetching & Caching (CRITICAL)
 
 - `data-server-fetch` - Fetch data in Server Components
-- `data-cache-strategy` - Configure caching per fetch
 - `data-revalidation` - ISR with revalidatePath/revalidateTag
-- `data-parallel-fetch` - Parallel data fetching with Promise.all
-- `data-streaming` - Stream data with Suspense boundaries
-- `data-no-client-fetch` - Avoid useEffect for initial data
 
 ### 3. Server & Client Components (CRITICAL)
 
 - `comp-server-by-default` - Server Components by default
 - `comp-client-boundary` - Push 'use client' to leaf components
-- `comp-composition` - Compose Server and Client Components
-- `comp-serialization` - Only serializable props cross the boundary
-- `comp-no-server-in-client` - Never import Server Components in Client
 
 ### 4. Server Actions (HIGH)
 
 - `action-mutations` - Use Server Actions for data mutations
-- `action-form-integration` - Integrate with forms and useActionState
-- `action-validation` - Validate input in Server Actions
-- `action-revalidation` - Revalidate data after mutations
-- `action-error-handling` - Handle errors in Server Actions
 
 ### 5. Performance & Optimization (HIGH)
 
 - `perf-image-component` - Use next/image for all images
-- `perf-font-optimization` - Use next/font for font loading
-- `perf-link-prefetching` - Use next/link for client navigation
-- `perf-dynamic-imports` - Dynamic imports for heavy components
-- `perf-bundle-analysis` - Analyze and reduce bundle size
-- `perf-partial-prerendering` - Leverage Partial Prerendering
 
 ### 6. Metadata & SEO (MEDIUM)
 
 - `meta-static-metadata` - Export metadata object for static pages
-- `meta-dynamic-metadata` - generateMetadata for dynamic pages
-- `meta-opengraph` - Open Graph and Twitter card metadata
-- `meta-sitemap` - Generate sitemap.xml
-- `meta-robots` - Configure robots.txt
 
 ### 7. Error Handling & Loading (MEDIUM)
 
 - `error-boundary` - Use error.tsx for error boundaries
-- `error-not-found` - Use not-found.tsx for 404 pages
-- `error-global-handler` - Global error handling in global-error.tsx
-- `loading-suspense` - Suspense boundaries for streaming
-- `loading-skeleton` - Skeleton UIs for loading states
 
 ### 8. Security & Middleware (MEDIUM)
 
 - `sec-middleware` - Use middleware.ts for auth and redirects
-- `sec-server-only` - Protect server-only code with server-only package
-- `sec-env-variables` - Manage environment variables securely
-- `sec-csrf-actions` - CSRF protection in Server Actions
-- `sec-headers` - Configure security headers
 
 ## Project Structure
 

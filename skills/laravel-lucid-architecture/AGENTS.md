@@ -8,7 +8,7 @@
 
 ## Overview
 
-Comprehensive guide for building Laravel 12 applications with Lucid Architecture, designed for AI agents and LLMs. Contains 30+ rules across 7 categories, prioritized by impact from critical (foundation and feature patterns) to incremental (advanced patterns). Each rule includes detailed explanations, real-world examples comparing incorrect vs. correct implementations using PHP 8.3 and Laravel 12 features, and specific impact metrics to guide automated refactoring and code generation.
+Comprehensive guide for building Laravel 12 applications with Lucid Architecture, designed for AI agents and LLMs. Contains 14 rules across 7 categories, prioritized by impact from critical (foundation and feature patterns) to incremental (advanced patterns). Each rule includes detailed explanations, real-world examples comparing incorrect vs. correct implementations using PHP 8.3 and Laravel 12 features, and specific impact metrics to guide automated refactoring and code generation.
 
 ### Key Features
 
@@ -47,7 +47,7 @@ This guide is organized into 7 categories, prioritized by their impact on applic
 **Impact:** CRITICAL
 **Description:** Core Lucid Architecture concepts — the directory layout, services as high-level boundaries, domains as business logic containers, features as entry points, operations as orchestrators, and jobs as atomic work units. Understanding these fundamentals is essential for correctly structuring any Lucid application.
 
-**Rules in this category:** 6
+**Rules in this category:** 3
 
 ---
 
@@ -56,7 +56,7 @@ This guide is organized into 7 categories, prioritized by their impact on applic
 **Impact:** CRITICAL
 **Description:** Features represent single user interactions and are dispatched from controllers. Operations group related jobs into reusable sequences. Proper feature and operation design ensures clean request handling, consistent responses, and business logic that's easy to test and maintain.
 
-**Rules in this category:** 5
+**Rules in this category:** 4
 
 ---
 
@@ -65,7 +65,7 @@ This guide is organized into 7 categories, prioritized by their impact on applic
 **Impact:** HIGH
 **Description:** Domains encapsulate business logic — models, jobs, policies, events, and exceptions. Services represent application boundaries (web, API, admin). Clear domain boundaries prevent coupling and make the codebase navigable. Cross-domain communication should follow explicit patterns.
 
-**Rules in this category:** 5
+**Rules in this category:** 2
 
 ---
 
@@ -74,7 +74,7 @@ This guide is organized into 7 categories, prioritized by their impact on applic
 **Impact:** HIGH
 **Description:** Jobs are the atomic units of Lucid Architecture. Each job performs exactly one task, accepts dependencies through its constructor, and returns a meaningful value. Well-designed jobs are reusable across multiple features and operations.
 
-**Rules in this category:** 5
+**Rules in this category:** 2
 
 ---
 
@@ -83,7 +83,7 @@ This guide is organized into 7 categories, prioritized by their impact on applic
 **Impact:** MEDIUM
 **Description:** Data objects provide structure for data flowing between layers. Validation rules are centralized in request classes or dedicated validators. Transformers convert between internal models and external representations.
 
-**Rules in this category:** 4
+**Rules in this category:** 1
 
 ---
 
@@ -92,7 +92,7 @@ This guide is organized into 7 categories, prioritized by their impact on applic
 **Impact:** MEDIUM
 **Description:** Lucid's layered architecture enables testing at the right abstraction level — feature tests for end-to-end flows, operation tests for orchestration, and unit tests for individual jobs. Each layer has its own testing strategy.
 
-**Rules in this category:** 4
+**Rules in this category:** 1
 
 ---
 
@@ -101,4 +101,4 @@ This guide is organized into 7 categories, prioritized by their impact on applic
 **Impact:** LOW-MEDIUM
 **Description:** Advanced patterns for mature Lucid applications: multi-service monoliths sharing domains, event-driven cross-domain communication, policy integration for authorization, and API versioning strategies.
 
-**Rules in this category:** 4
+**Rules in this category:** 1
